@@ -442,6 +442,7 @@ body {
 .blog-img {
   height: auto;
   overflow: hidden;
+  display:block;
 }
 .blog-img img {
   max-width: 100%;
