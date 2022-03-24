@@ -1,0 +1,60 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+tfoot th{
+  border: none !important;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.cart-img {
+  text-align: center;
+  width: 140px;
+  height: 120px;
+}
+.fa-trash{
+  font-size: 30px;
+}
+td:nth-child(2){
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap:0 40px;
+} 
+td{
+  text-align: center;
+}
+td:last-child{
+  text-align: center;
+}
+button{
+  cursor: pointer;
+}
+.home{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.total{
+  padding-top: 40px;
+  padding-left: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.logo{
+  text-align: center;
+  padding: 30px;
+}
