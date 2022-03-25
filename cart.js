@@ -13,7 +13,7 @@ for(var i = 0;i <= localsData.length -1; i++){
   htmlCart += '<tr><td>'+i+'</td>\
   <td><img class="cart-img" src='+localsData[i].img+' alt="" />'+localsData[i].product+'</td><td>'+localsData[i].count+'</td><td>'+localsData[i].price+' VND</td><td>\
   <button onclick="remove('+localsData[i].id+')"><i class="fa fa-trash" aria-hidden="true"></i></button></td></tr>';
-  sum +=parseInt(localsData[i].price);
+  sum +=parseInt(localsData[i].price * localsData[i].count);
   htmlFooter = '<div class="total">TOTAL : '+sum+' VND</div>';
 }
 $table[0].innerHTML = htmlHead + htmlCart +htmlFooter;
