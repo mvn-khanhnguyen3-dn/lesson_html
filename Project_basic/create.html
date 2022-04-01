@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <h2 class="header-title">Create Product</h2>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="section-form">
+        <h2 class="side-home"><a href="./index.html" class="home">HOME</a></h2>
+        <form action="">
+          <div class="form-top">
+            <div class="form-field">
+              <label for="product_name">Product Name</label>
+              <input type="text" name="product_name" required />
+            </div>
+            <div class="form-field">
+              <label for="price">Price</label>
+              <input type="text" name="price" required/>
+            </div>
+
+            <div class="form-field">
+              <label for="image">Image</label>
+              <input type="file" name="image" />
+            </div>
+          </div>
+          <div class="form-bottom">
+            <div class="form-field">
+              <br />
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="descriptionId"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button class="create_product">Create</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div id="toast">
+        <div id="img-edit-create"><i class="fa fa-check-circle-o" aria-hidden="true"></i></div>
+        <div id="desc-edit-create">Create successful..</div>
+      </div>
+    </footer>
+    <script src="./create.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Project Basic</title>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <h2 class="header-title">Product Management</h2>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <section class="section-content">
+          <h2 class="side-home">HOME</h2>
+          <a class="create_product_home" href="./create.html">create product</a>
+          <section class="section-product">
+            <div class="product-welcome">
+              <div class="welcome-title">
+                <h2>Welcome to Product Management</h2>
+                <p>Hello , welcome to your awesome product management!</p>
+              </div>
+              <input id="search" type="text" placeholder="Search..." />
+            </div>
+            <section class="section-table">
+              <ul class="table-list"></ul>
+            </section>
+          </section>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div id="toast">
+        <div id="img"><i class="fa fa-ban" aria-hidden="true"></i></div>
+        <div id="desc">Remove successful..</div>
+      </div>
+    </footer>
+  </body>
+</html>
