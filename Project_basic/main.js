@@ -82,6 +82,7 @@ for (let i = 0; i <= locals.length - 1; i++) {
 // toast
 
 function launch_toast() {
+  alert("Are You Sure ?");
   var x = document.getElementById("toast");
   console.log(x);
   x.className = "show";
