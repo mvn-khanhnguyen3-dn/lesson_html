@@ -1,0 +1,90 @@
+.section-product {
+  .product-tab-list {
+    gap:convertPxToRem(20px);
+    font-size: convertPxToRem(20px);
+    padding-bottom: convertPxToRem(40px);
+    .active {
+      a {
+        margin-top:convertPxToRem(20px);
+        border-bottom: convertPxToRem(2px) solid map-get($colors, black);
+      }
+    }
+  }
+  .product-list {
+    flex-wrap: wrap;
+  }
+  .product-view-more {
+    text-transform: uppercase;
+    padding-top: convertPxToRem(40px);
+    text-align: center;
+  }
+}
+
+.product-item {
+  position: relative;
+  padding-right:convertPxToRem(20px);
+  line-height: 2;
+  &:nth-child(4),
+  &:nth-child(8) {
+    padding-right: 0;
+  }
+  .product-item-sale {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+  }
+  img {
+    height: 80%;
+  }
+  .product-item-action {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .product-item-action {
+    .add-eye,
+    .add-cart,
+    .add-compass {
+      font-size: convertPxToRem(16px);
+      line-height: convertPxToRem(40px);
+      display: inline-block;
+      width: convertPxToRem(40px);
+      height: convertPxToRem(40px);
+      margin: 0 convertPxToRem(3px);
+      transition: all 0.4s ease-in-out;
+      transform: scaleX(0);
+      text-align: center;
+      color: map-get($colors, white);
+      border: none;
+      border-radius: convertPxToRem(50px);
+      background: none;
+      background-color: map-get($colors, brand-css);
+    }
+    &:hover .add-eye,
+    &:hover .add-cart,
+    &:hover .add-compass {
+      transform: scale(1);
+    }
+  }
+  .product-item-title {
+    line-height:convertPxToRem(30px);
+    padding-top: convertPxToRem(10px);
+    font-size: convertPxToRem(20px);
+    font-weight: map-get($font-weight, normal);
+  }
+  .product-item .sale-percent {
+    color: map-get($colors, brand-css);
+  }
+  .product-item .sale-new {
+    color: map-get($colors, brand-css);
+  }
+  .product-item-price {
+    font-size: convertPxToRem(16px);
+    font-weight: map-get($font-weight, medium);
+    line-height: convertPxToRem(40px);
+    span {
+      color: map-get($colors, brand-css);
+    }
+  }
+}
