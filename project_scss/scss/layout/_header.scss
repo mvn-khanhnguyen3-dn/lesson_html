@@ -1,0 +1,37 @@
+.page-header {
+  @include pxRem(padding, 10);
+  background: map-get($colors, bg-gray);
+  text-align: center;
+  height: convertPxToRem(100px);
+  line-height: convertPxToRem(100px);
+  .header-logo {
+    line-height: convertPxToRem(100px);
+  }
+  .menu-list {
+    gap:convertPxToRem(40px);
+    .menu-item {
+      font-size:convertPxToRem(16px);
+    }
+  }
+  .social-list {
+    gap: convertPxToRem(20px);
+    .social-item {
+      sup {
+        font-size: convertPxToRem(10px);
+        line-height: convertPxToRem(20px);
+        background:  map-get($colors, black);
+        color:  map-get($colors, white);
+        padding: convertPxToRem(2px) convertPxToRem(5px);
+        text-align: center;
+        border-radius: 50%;
+      }
+      a {
+        color:  map-get($colors, black);
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size:convertPxToRem(16px);
+      }
+    }
+  }
+}

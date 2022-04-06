@@ -1,0 +1,61 @@
+.page-footer {
+  @include pxRem(padding, 10);
+  background: map-get($colors, bg-gray);
+  text-align: center;
+    margin: convertPxToRem(40px) 0 0 0;
+    padding:  convertPxToRem(60px) 0;
+    background: map-get($colors , border-gray);
+    .footer-middle-3-col {
+      width: 50%;
+    }
+    .footer-left,
+    .footer-middle-3-col,
+    .footer-middle-col,
+    .footer-right {
+      font-size: convertPxToRem(16px);
+      font-weight: map-get($font-weight, normal);
+      line-height: convertPxToRem(50px);
+    }
+    .footer-middle-title,
+    .footer-right-title {
+      font-size: convertPxToRem(16px);
+      font-weight: map-get($font-weight, normal);
+      line-height: 2;
+      color: map-get($colors, txt-black);
+    }
+    .footer-right {
+      width: 25%;
+      .footer-right-content {
+        color: map-get($colors, txt-black);
+        font-size:convertPxToRem(16px);
+        line-height: convertPxToRem(20px);
+        display: block;
+        width: 100%;
+        p {
+          text-align: justify;
+          letter-spacing: 0;
+        }
+      }
+      .footer-right-text {
+        font-size: convertPxToRem(12px);
+        color: map-get($colors,black );
+        border: none;
+        border-bottom: convertPxToRem(2px) solid map-get($colors, black);
+        border-radius: 0;
+        background: transparent;
+        outline: none;
+      }
+      .btn-sub {
+        font-size: convertPxToRem(16px);
+        line-height: 1;
+        width: auto;
+        height: auto;
+        text-transform: uppercase;
+        color: map-get($colors, black );
+        border: none;
+        border-bottom: convertPxToRem(2px) solid map-get($colors, border-gray-light);
+        background: none;
+        text-align: justify;
+      }
+    }
+  }
