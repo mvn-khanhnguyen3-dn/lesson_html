@@ -204,19 +204,21 @@
     margin: 0;
     text-align: center;
     padding-bottom:convertPxToRem(20px);
-    h2::before {
+    h2{
+    &::before {
       @include absCenter("blog-before");
       width:  convertPxToRem(120px);
       height:  convertPxToRem(2px);
       content: "";
       background-color: map-get($colors, black);
-    }
-    h2::after {
+      }
+      &::after {
       @include absCenter("blog-after");
       width:  convertPxToRem(120px);
       height:  convertPxToRem(2px);
       content: "";
       background-color: map-get($colors, black);
+      }
     }
   }
 }
@@ -289,12 +291,16 @@
   .product-list .product-item:nth-child(6) {
     padding-right: 0;
   }
-  .blog-title h2::before {
-    left: 25%;
-  }
-  .blog-title h2::after {
-    right: 25%;
-  }
+ .blog-title {
+      h2::before {
+        left: 12%;
+        width: convertPxToRem(90px);
+      }
+      h2::after {
+        right: 12%;
+        width: convertPxToRem(90px);
+      }
+    }
 }
 @include respond-below(medium) {
   .nav-menu,
@@ -328,11 +334,15 @@
   .product-list .product-item:nth-child(2n) {
     padding-right: 0;
   }
-  .blog-title h2::before {
-    left: 18%;
-  }
-  .blog-title h2::after {
-    right: 18%;
+  .blog-title {
+    h2{
+      &::before {
+      left: 18%;
+      }
+      &::after {
+      right: 18%;
+      }
+    }
   }
   .blog-list {
     gap: convertPxToRem(40px);
@@ -399,13 +409,15 @@
   }
   .section-blog {
     .blog-title {
-      h2::before {
+      h2{
+      &::before {
         left: 12%;
         width: convertPxToRem(90px);
       }
-      h2::after {
+        &::after {
         right: 12%;
         width: convertPxToRem(90px);
+       }
       }
     }
   }
